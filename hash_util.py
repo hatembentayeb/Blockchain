@@ -12,5 +12,6 @@ def hash_string_256(string):
 def hash_block(block):
 
     #must include sort keys because cannot garantie the order of the dict.
-    return sha256(json.dumps(block, sort_keys=True).encode()).hexdigest()
+    hachebal_block= block.__dict__.copy()
+    return sha256(json.dumps(hachebal_block, sort_keys=True).encode()).hexdigest()
 
