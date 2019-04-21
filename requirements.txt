@@ -1,0 +1,4 @@
+requests==2.21.0
+Flask==1.0.2
+Flask_Cors==3.0.3
+pycrypto==2.6.1
