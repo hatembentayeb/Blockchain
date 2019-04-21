@@ -5,5 +5,6 @@ RUN pip install Flask==1.0.2
 RUN pip install pycrypto==2.6.1
 COPY . /app
 WORKDIR /app
+EXPOSE 2000
 ENTRYPOINT ["python3"]
 CMD ["node.py"]
